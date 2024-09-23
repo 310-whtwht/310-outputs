@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  frontend:
+    build: ./client
+    container_name: vue-app
+    ports:
+      - "3000:3000"  # Vue3のポート
+    volumes:
+      - ./client:/app
+    depends_on:
+      - backend
+
+  backend:
+    build: ./server
+    container_name: node-app
+    ports:
+      - "4000:4000"  # Node.jsのポート
+    volumes:
+      - ./server:/app
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: my_database
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
