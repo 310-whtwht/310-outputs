@@ -1,18 +1,21 @@
 <script setup lang="ts">
+import FooterComponent from '../components/FooterComponent.vue'
 </script>
 
 <template>
   <main>
-    
-    <h1 class="nice-meet-you">Nice meeting you!<span class="border"></span><span class="border2"></span></h1>
-    
-    <p>はじめまして。310です。</p>
-    <p>株式会社iRupという会社でWeb開発をしています。</p>
-    <p>得意な技術スタックはVue3+Node.jsです。</p>
-    <p>このサイトもVue3で作成しました。</p>
-    <p><br></p>
-    <p>学習の備忘録として置いておきます。</p>
-    <p>よかったら覗いていってください。</p>
+  <div class="content-wrapper">
+      <h1 class="nice-meet-you">Nice meeting you!<span class="border"></span><span class="border2"></span></h1>
+      
+      <p>はじめまして。310です。</p>
+      <p>株式会社iRupという会社でWeb開発をしています。</p>
+      <p>得意な技術スタックはVue3+Node.jsです。</p>
+      <p>このサイトもVue3で作成しました。</p>
+      <p><br></p>
+      <p>学習の備忘録として置いておきます。</p>
+      <p>よかったら覗いていってください。</p>
+    </div>
+    <!-- <FooterComponent /> -->
   </main>
 </template>
 

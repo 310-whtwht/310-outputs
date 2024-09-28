@@ -2,7 +2,7 @@
   <header>
     <div class="header-wrapper">
       <div class="header-logo">
-        <img src="/src/assets/img/310outputs.svg" alt="logo" />
+        <RouterLink to="/"><img src="/src/assets/img/310outputs.svg" alt="logo" /></RouterLink>
       </div>
       <nav class="header-nav">
         <div class="header-nav-router">
@@ -29,6 +29,11 @@
 .header-nav-router a {
   color: #73bf8e;
 }
+.header-nav-router a:hover {
+  color: #c0e6cd;
+  transform: scale(110%);
+  transition: 0.5s;
+}
 .header-logo {
   height: 35px;
   /* width: 100%; */
@@ -38,6 +43,10 @@
 .header-logo img {
   height: 100%;
   width: 100%;
+}
+.header-logo img:hover {
+  transform: scale(102%);
+  transition: 0.5s;
 }
 
 .header-wrapper {
