@@ -1,0 +1,205 @@
+/* 全体の設定 */
+body {
+  background-color: #f7f9f8;
+  color: #333;
+  font-family: "Josefin Sans","Zen Kaku Gothic New", sans-serif;
+  /* margin: 0;
+  padding: 0; */
+}
+
+/* markdown用の設定 */
+
+strong {
+  font-weight: bold;
+}
+
+.post-container {
+  width: 100%;
+  padding: 60px;
+}
+
+.post-title {
+  font-size: 24px;
+  background-color: #333;
+  color: #f7f9f8;
+  width: fit-content;
+  padding: 4px;
+}
+
+.post-date {
+  margin-top: 6px;
+  font-style: italic;
+}
+
+.post-content {
+  margin-top: 16px;
+}
+/* Qiita風Markdown用CSS */
+.post-content {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.8;
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* 見出し */
+.post-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #666666;
+  padding-bottom: 8px;
+}
+
+.post-content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #666666;
+  padding-bottom: 4px;
+}
+
+.post-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+/* 段落 */
+.post-content p {
+  margin: 15px 0;
+}
+
+/* リスト */
+.post-content ul, .post-content ol {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.post-content li {
+  margin-bottom: 8px;
+}
+
+/* コードブロック */
+.post-content pre {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  overflow-x: auto;
+  color: #333;
+}
+
+.post-content code {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 14px;
+  color: #e74c3c;
+}
+
+/* 引用ブロック */
+.post-content blockquote {
+  border-left: 4px solid #3498db;
+  padding-left: 16px;
+  color: #555;
+  margin: 15px 0;
+}
+
+/* テーブル */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background-color: #f9f9f9;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.post-content th {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+.post-content td {
+  color: #333;
+}
+
+/* ダークテーマのシンタックスハイライト */
+.post-content pre {
+  background-color: #2d2d2d; /* ダークグレーの背景 */
+  border-radius: 4px;
+  padding: 15px;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  overflow-x: auto;
+  color: #f8f8f2; /* ベースの文字色 */
+  line-height: 1.6;
+  position: relative;
+}
+
+/* シンタックスハイライト */
+.post-content pre .keyword {
+  color: #66d9ef; /* キーワードの色 */
+}
+
+.post-content pre .function {
+  color: #a6e22e; /* 関数の色 */
+}
+
+.post-content pre .string {
+  color: #e6db74; /* 文字列の色 */
+}
+
+.post-content pre .comment {
+  color: #75715e; /* コメントの色 */
+  font-style: italic;
+}
+
+.post-content pre .number {
+  color: #ae81ff; /* 数字の色 */
+}
+
+.post-content pre .operator {
+  color: #f92672; /* 演算子の色 */
+}
+
+/* インラインコード用 */
+.post-content code {
+  background-color: #2d2d2d;
+  color: #a6e22e; /* ダークモードの文字色 */
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 14px;
+}
+
+
+
+
+
+.next-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #0070f3;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+}
